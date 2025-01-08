@@ -4,34 +4,40 @@
     <meta charset="UTF-8"> <!-- aplica un encodingespecial-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- esto es as informacion del mavegador, como que temaños tendra-->
     <title>MipagWeb</title> <!-- es el nombre que tendra tu pagina web-->
-    <style> 
-        h1{
-            text-align: center; /* centrar el texto*/
-            color : red;
-            TEXT-TRANSFORM: UPPERCASE/* esto es para hacer las letras mayusculas*/
+    <link rel ="preloaad" href="css/normalize.css" as ="style">
+    <link rel = "stylesheet" href ="css/normalize.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-        }
-    </style>
+    <link rel ="preloaad" href="css/styles.css" as ="style"> <!-- esto es para tener un mejor performance en la pagina, 
+    se recomienda-->
+    <link href ="css/styles.css" rel =" stylesheet"> <!-- el link es para enlazar la carpeta correcta
+    para el css, y lo que es el reel stylesheet es para ya indicarle la conexion con los estilos-->
+
 </head>
 <body>
     <header>
- <h1>Victor Manuel Colón López</h1>  <!-- este es el renglon mas importante de la pagina, ya que contiene el h1-->
+ <h1 class  = "titulo">Victor Manuel Colón López
+     <span> Equisde</span></h1>  <!-- este es el renglon mas importante de la pagina, ya que contiene el h1-->
         </header>
-        <nav> 
+    <div class="nav-bg">
+        <nav class="nav-main contenedor"> 
             <a href ="">Inicio</a> <!-- esta sintaxis es para poder tener enlaces-->
-            <a href ="">Sobre Mi</a> <!-- esta sintaxis es para poder tener enlaces-->
+            <a href ="creador.html">Sobre Mi</a> <!-- esta sintaxis es para poder tener enlaces-->
             <a href ="">Clientes</a> <!-- esta sintaxis es para poder tener enlaces-->
-            <a href =" https://wa.me/524941125352 ">Contacto</a> <!-- esta sintaxis es para poder tener enlaces-->
+            <a href ="">Contacto</a> <!-- esta sintaxis es para poder tener enlaces-->
             <!-- lo que esta entre comillas es lo que se va a llebar al enlace, 
              ya sea imagenes o otra pagina con el nombre del archivo en codigo-->
-        
+            
 
             
             
       
         </nav>
+    </div>
+   
 <section>
-    <h2>Diseño y desarrollo web freelancer</h2>
+    <h2 class="titulo">Diseño y desarrollo web freelancer</h2>
     <p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="orange" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
           <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>

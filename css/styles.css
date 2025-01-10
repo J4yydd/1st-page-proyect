@@ -32,16 +32,27 @@ body {                           /*  las dos primeras opciones de arrba es para 
 }
 .nav-main{
     color : var(--blanco);
-    display:flex;/* nos habilita nuevas propiedades para las barras de navegacion*/
+    display:flex;
+    flex-direction: column;/* nos habilita nuevas propiedades para las barras de navegacion*/
     justify-content: space-between; /* esto genera  la separacion entre las nav*/
    /* flex-direction: column;*/ /* esto hace que las barras de navegaciones esten acomodadas por columna*/
+   /* el flex end puede ser para ponerlos al final*/
     
 
 }
 .nav-main a{
     color : var(--blanco);
     text-decoration: none;/* esto es para que en las palabras de navegacion no se vean con una linea abajo, en si el none es para que no se vea nada */
+    font-weight: 700;/* esto es para hacerlo en negritas*/
+    padding: 1rem;/* esto lo que hace es darle grosor a la barra de color, a diferencia del margin que solo da el espaciado, sin embargo
+    depende de el espacio del  margin el grosor del padding*/
+    
 
+}
+.nav-main a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+   
 }
 .contenedor{  /* esto en si es como se va a ver el disenio de las navegaciones*/
     width: 120rem;
@@ -50,11 +61,28 @@ body {                           /*  las dos primeras opciones de arrba es para 
     margin-bottom: 0; /* esto lo que hace es darle saparacion hacia abajo*/
     margin-left: auto; /* lo q explique con el de r*/
     margin: 0 auto 0 auto;  /* esto es exactamente lo mismo que lo de arriba, funciona como un reloj*/
-    padding: 1rem;/* esto lo que hace es darle grosor a la barra de color, a diferencia del margin que solo da el espaciado, sin embargo
-    depende de el espacio del  margin el grosor del padding*/
+    
   
 }
 .nav-bg{
     background-color: var(--secundario);/* cuando ponemos esto, se aplica a tooodo el color de fondo*/
 
+}
+@media(min-width: 480px) {
+    body{
+        background-color: var(--blanco);
+    }
+    
+}
+@media (min-width: 480px) {
+    h1 {
+
+    } 
+    
+}
+@media (min-width:748px ) { 
+    .nav-main{
+        flex-direction: row;
+    }
+    
 }
